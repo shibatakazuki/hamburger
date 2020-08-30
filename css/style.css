@@ -1,1 +1,42 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Noto Sans JP', 'MyYuGothicM', 'YuGothic', '-apple-system', 'system-ui', 'Hiragino kaku Gothic ProN', 'Meiryo', 'Verdana', 'arial', 'helvetica', 'sans-serif', 'FontAwesome';
+  font-size: 1.4rem;
+  min-width: 375px;
+  background-color: #FFFDFA;
+}
+
+a {
+  text-decoration: none;
+}
+
+li, dl, dt, dd {
+  list-style: none;
+}
+
+.l-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l-header {
+  background-color: #FFF7EF;
+  width: 1162px;
+  height: 217px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.l-header__sitename {
+  color: #707070;
+  margin-left: 5rem;
+  margin-top: 4rem;
+  font-size: 5rem;
+  font-family: 'Roboto', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
