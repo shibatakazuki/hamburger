@@ -23,6 +23,11 @@ li, dl, dt, dd {
   display: flex;
 }
 
+.l-container .l-main {
+  width: 1162px;
+  height: 217px;
+}
+
 .l-header {
   background-color: #FFF7EF;
   width: 1162px;
@@ -30,13 +35,133 @@ li, dl, dt, dd {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .l-header__sitename {
   color: #707070;
   margin-left: 5rem;
-  margin-top: 4rem;
+  padding-top: 6rem;
   font-size: 5rem;
   font-family: 'Roboto', sans-serif;
+}
+
+.l-header__searchform {
+  margin: 8rem 3rem 0 0;
+}
+
+.l-header__searchform__keyword {
+  width: 30rem;
+  height: 3rem;
+  background-color: #fff;
+  border: 1px solid #707070;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.l-header__searchform__button {
+  width: 8rem;
+  height: 3rem;
+  background-color: #F2EDE9;
+  border: 1px solid #707070;
+  border-radius: 0.5rem;
+  color: #707070;
+}
+
+.p-button {
+  display: block;
+  margin: 0 0 0 auto;
+  margin-top: 8%;
+  margin-right: 5%;
+}
+
+@media (min-width: 769px) {
+  .p-button {
+    display: none;
+  }
+}
+
+.p-topimage01 {
+  position: relative;
+  width: 100%;
+}
+
+.p-topimage01 img {
+  width: 100%;
+}
+
+.p-topimage01__text {
+  position: absolute;
+  top: 45%;
+  left: 11%;
+  font-size: 4rem;
+  color: #ffff;
+  font-weight: normal;
+}
+
+.p-sectionmenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-sectionmenu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.p-sectionmenu__list img {
+  width: 90%;
+  height: 80rem;
+  margin: 6rem 0 0 2rem;
+  padding-bottom: 6rem;
+}
+
+.p-sectionmenu__list h2 {
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  font-size: 6rem;
+  color: #fff;
+}
+
+.p-sectionmenu__list__contents01 {
+  position: absolute;
+  top: 59%;
+  left: 11%;
+  width: 470px;
+  height: 131px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.p-sectionmenu__list__contents02 {
+  position: absolute;
+  top: 76%;
+  left: 11%;
+  width: 470px;
+  height: 131px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.p-sectionmenu__list dt {
+  font-size: 1.8rem;
+  margin: 1rem 0 0 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.p-sectionmenu__list dd {
+  font-size: 1.2rem;
+  margin: 0 0 0 1.2rem;
+  width: 450px;
 }
 /*# sourceMappingURL=style.css.map */

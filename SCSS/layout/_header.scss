@@ -5,15 +5,39 @@
     width:1162px;
     height: 217px;
     justify-content: space-between;
+    display: flex;
     
     &__sitename {
         color: #707070;
         margin-left: 5rem;
-        margin-top: 4rem;
+        padding-top: 6rem;
         font-size: 5rem;
         font-family: 'Roboto', sans-serif;
         @include breakpoint( pc ) {
-        margin: 5%;   
+           
         }
     }
+    &__searchform {
+        margin: 8rem 3rem 0 0;
+    
+        &__keyword{
+            width: 30rem;
+            height: 3rem;
+            background-color: #fff;
+            border: 1px solid #707070;
+            border-radius: 0.5rem;
+            margin-right: 1rem;
+        }
+        &__button{
+            width: 8rem;
+            height: 3rem;
+            background-color: #F2EDE9;
+            border: 1px solid #707070;
+            border-radius: 0.5rem;
+            color: #707070;
+
+        }
+    }
+            
+    
 }
