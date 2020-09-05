@@ -2,10 +2,11 @@
 
 .l-header{
     background-color: #FFF7EF;
-    width:1162px;
-    height: 217px;
-    justify-content: space-between;
-    display: flex;
+    @include breakpoint(pc){
+        justify-content: space-between;
+        display: flex;
+        
+    }
     
     &__sitename {
         color: #707070;
@@ -13,9 +14,7 @@
         padding-top: 6rem;
         font-size: 5rem;
         font-family: 'Roboto', sans-serif;
-        @include breakpoint( pc ) {
-           
-        }
+        
     }
     &__searchform {
         margin: 8rem 3rem 0 0;

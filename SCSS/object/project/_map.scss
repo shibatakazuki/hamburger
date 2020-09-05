@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.p-map{
+    position: relative;
+    img{
+        width: 100%;
+        height:45rem;
+        background-color: rgba(0,0,0,0.8);
+
+    }
+    &__contents{
+        position: absolute;
+        top:0;
+        left:0;
+        width:62%;
+        height: 100%;
+        padding: 5rem;
+        color: #fff;
+        background-color:  rgba(0,0,0,0.3);
+    &__text{
+        font-size: 3rem;
+    }
+    }
+}
