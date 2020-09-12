@@ -28,27 +28,44 @@ hr {
   display: flex;
 }
 
-.l-container .l-main {
-  width: 1162px;
-  height: 217px;
-}
-
 @media (min-width: 896px) {
   .l-container {
     overflow: hidden;
   }
 }
 
+.l-footer {
+  height: 15rem;
+  padding: 1rem 0;
+  background-color: #9D8670;
+  color: white;
+  text-align: center;
+}
+
+.l-footer ul li {
+  display: inline;
+  font-size: 1.8rem;
+  line-height: 8rem;
+}
+
+.l-footer ul li a {
+  color: white;
+}
+
+.l-footer__copyright {
+  margin-top: 3rem;
+}
+
 .l-header {
   background-color: #FFF7EF;
-  width: 1162px;
-  height: 217px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 112rem;
+  height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .l-header__sitename {
@@ -57,10 +74,17 @@ hr {
   padding-top: 6rem;
   font-size: 5rem;
   font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
 .l-header__searchform {
   margin: 8rem 3rem 0 0;
+}
+
+@media (min-width: 641px) {
+  .l-header__searchform {
+    margin: 3rem 3rem 0 0;
+  }
 }
 
 .l-header__searchform__keyword {
@@ -88,12 +112,38 @@ hr {
   width: 100%;
   height: 100%;
   background-color: #F2EDE9;
+  padding-left: 3rem;
+  font-family: M1m;
+}
+
+@media (min-width: 896px) {
+  .l-sidebar {
+    position: static;
+    width: 100%;
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
+  }
+}
+
+.l-sidebar__title {
+  margin-top: 4rem;
+  font-size: 1.7rem;
+}
+
+.l-sidebar li {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.l-sidebar a {
+  padding-left: 2rem;
+  text-decoration: none;
+  color: #707070;
 }
 
 .p-button {
   display: block;
   margin: 0 0 0 auto;
-  margin-top: 8%;
   margin-right: 5%;
 }
 
@@ -105,7 +155,7 @@ hr {
 
 .p-topimage01 {
   position: relative;
-  width: 100%;
+  width: 112rem;
 }
 
 .p-topimage01 img {
@@ -119,6 +169,10 @@ hr {
   font-size: 4rem;
   color: #ffff;
   font-weight: normal;
+}
+
+.p-sectionmenu {
+  width: 112rem;
 }
 
 .p-sectionmenu ul {
@@ -200,7 +254,7 @@ hr {
   top: 0;
   left: 0;
   width: 62%;
-  height: 100%;
+  height: 45rem;
   padding: 5rem;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
@@ -208,5 +262,137 @@ hr {
 
 .p-map__contents__text {
   font-size: 3rem;
+}
+
+.p-sidebarmenu {
+  margin-top: 5rem;
+}
+
+.p-sidebarmenu__list {
+  color: #707070;
+}
+
+.p-archivetopimage {
+  position: relative;
+  width: 100%;
+}
+
+.p-archivetopimage img {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 20rem;
+}
+
+.p-archivetopimage__text {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.p-archivetopimage__text span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding-left: 15rem;
+  margin-top: -3.5rem;
+}
+
+.p-archivemain {
+  display: block;
+  color: #3C2A10;
+  width: 100%;
+  height: 15rem;
+  padding: 0 7rem 2rem;
+}
+
+.p-archivemain h2 {
+  padding: 0 0 0.5rem;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.p-archivemain p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.p-pagenation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 45%;
+  margin: 5rem auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-pagenation__button {
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid #707070;
+  background-color: #ffff;
+  margin: 0 0.5rem;
+  color: #707070;
+}
+
+@media (min-width: 641px) {
+  .c-menucard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+    height: 35rem;
+  }
+}
+
+.c-menucard__img {
+  display: block;
+  width: 50%;
+}
+
+.c-menucard__contents {
+  background-color: #3C2B1C;
+  color: #fff;
+  padding: 3rem 4rem;
+  width: 50%;
+}
+
+.c-menucard__contents dt {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  font-weight: normal;
+}
+
+.c-menucard__contents dd {
+  padding-top: 2rem;
+}
+
+.c-menucard__contents dd h3 {
+  font-weight: normal;
+  padding-bottom: 1.5rem;
+}
+
+.c-menucard__contents dd p {
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.c-menucard__contents__button {
+  width: 20rem;
+  height: 5rem;
+  background-color: #fff;
+  border: solid 1rem #0000;
+  border-radius: 3rem;
+  color: #707070;
+  font-size: 1rem;
+  margin: 4rem 0 0 12rem;
 }
 /*# sourceMappingURL=style.css.map */

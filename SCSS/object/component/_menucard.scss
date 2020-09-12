@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.c-menucard{
+    @include breakpoint ( tablet ) {
+     display: flex;
+     margin: auto;
+     margin-bottom: 2rem;
+     width: 90%;
+     height: 35rem;
+
+
+    }
+    &__img{
+        display: block;
+        width: 50%;
+    }
+    &__contents {
+        background-color: #3C2B1C;
+        color: #fff;
+        padding: 3rem 4rem;
+        width: 50%;
+
+        dt{
+            font-size: 2.5rem;
+            margin: 2rem 0;
+            font-weight: normal;
+
+        }
+        dd{
+            padding-top: 2rem;
+            h3{
+               font-weight: normal;
+               padding-bottom: 1.5rem; 
+            }
+            p{
+                font-weight: normal;
+                font-size: 1.2rem;
+            }
+        }
+        &__button{
+            width: 20rem;
+            height: 5rem;
+            background-color: #fff;
+            border: solid 1rem #0000;
+            border-radius: 3rem;
+            color: #707070;
+            font-size: 1rem;
+            margin: 4rem 0 0 12rem;
+        }
+    }
+}

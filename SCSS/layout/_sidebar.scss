@@ -1,10 +1,33 @@
-@charset "UTF-8";
+@import "../_variables";
+
 .l-sidebar{
     position: fixed;
-    left: 100%;
+    left:100%;
     z-index: 10;
     width: 100%;
     height: 100%;
     background-color: #F2EDE9;
+    padding-left: 3rem;
+    font-family: M+1m;
+    @include breakpoint( pc ){
+    position: static;
+    width: 100%;
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
+    }
+    &__title{
+        margin-top: 4rem;
+        font-size: 1.7rem;
+    }
+    li{
+        padding-top: 2rem;
+        font-size: 1.5rem;
+
+    }
+    a{
+        padding-left: 2rem;
+        text-decoration: none;
+        color: #707070;
+    }
     
 }

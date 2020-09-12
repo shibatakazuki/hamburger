@@ -15,7 +15,7 @@
 <body>
     <div class="l-container">
       <div class="l-main">
-        <header class="l-header"> <a class="p-button" hrel="menu.html">menu</a>
+        <header class="l-header"> <button class="p-button" hrel="menu.html">menu</button>
             <h1 class="l-header__sitename">Hamburger</h1> 
             <form action="#" class="l-header__searchform">
               <input type="search" class="l-header__searchform__keyword">
@@ -24,8 +24,9 @@
               <label for="button"></label>
             </form> 
           </header>
-       <div class="p-archivetopimage">
-       　<h2 class="p-archivetopimage__text">MENU:<br><span>チーズバーガー</span></h2>
+       <div class="p-archivetopimage"><img src="img/archive-main.png">
+       　<h2 class="p-archivetopimage__text">
+           Menu:<span>チーズバーガー</span></h2>
        </div>
        <div class="p-archivemain">
            <h2>小見出しが入ります</h2>
@@ -35,7 +36,7 @@
        <ul>
            <li class="c-menucard">
                <img src="/img/archive_menucard.png" class="c-menucard__img">
-               <dl class="c-menucard-contents">
+               <dl class="c-menucard__contents">
                    <dt>
                        チーズバーガー
                    </dt>
@@ -43,27 +44,27 @@
                        <h3>小見出しが入ります</h3>
                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                    </dd>
-                   <button type="button" href="#" class="p-button">詳しく見る</button>
+                   <button type="button" href="#" class="c-menucard__contents__button">詳しく見る</button>
                </dl>
            </li>
           
            <li class="c-menucard">
                <img src="/img/archive_menucard.png" class="c-menucard__img">
-               <dl class="c-menucard-contents">
+               <dl class="c-menucard__contents">
                 <dt>
-                      ダブルチーズバーガー
+                    ダブルチーズバーガー
                 </dt>
                 <dd>
                     <h3>小見出しが入ります</h3>
                     <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </dd>
-                <button type="button" href="#" class="p-button">詳しく見る</button>
+                <button type="button" href="#" class="c-menucard__contents__button">詳しく見る</button>
                </dl>
            </li>
           
            <li class="c-menucard">
                <img src="/img/archive_menucard.png" class="c-menucard__img">
-               <dl class="c-menucard-contents">
+               <dl class="c-menucard__contents">
                 <dt>
                    　　スペシャルチーズバーガー
                 </dt>
@@ -71,7 +72,7 @@
                  <h3>小見出しが入ります</h3>
                   <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </dd>
-             <button type="button" href="#" class="p-button">詳しく見る</button>
+             <button type="button" href="#" class="c-menucard__contents__button">詳しく見る</button>
             </dl>
         </li>
 
@@ -130,11 +131,12 @@
     </li>
      </ul>
     </div>
+</div>
     <!-----↑右サイドのメニューバー-->
     
     <footer class="l-footer">
         <ul>
-            <li><a hrel="#">ショップ情報</a>
+            <li><a hrel="#">ショップ情報 | </a>
             </li>
             <li><a hrel="#">ヒストリー</a>
             </li>
@@ -143,6 +145,5 @@
         <p>Copyright: RaiseTech</p>  
       
       </footer>
-         
-</div>
+
 </body>

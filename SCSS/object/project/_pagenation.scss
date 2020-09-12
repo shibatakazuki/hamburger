@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.p-pagenation{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin: 5rem auto;
+    align-items: center;
+
+    &__button{
+        height: 3rem;
+        width: 3rem;
+        border: 1px solid #707070;
+        background-color: #ffff;
+        margin: 0 0.5rem;
+        color: #707070;
+
+    }
+}

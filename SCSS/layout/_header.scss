@@ -2,9 +2,11 @@
 
 .l-header{
     background-color: #FFF7EF;
-    @include breakpoint(pc){
-        justify-content: space-between;
-        display: flex;
+    width: 112rem;
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint( pc ){
         
     }
     
@@ -14,10 +16,16 @@
         padding-top: 6rem;
         font-size: 5rem;
         font-family: 'Roboto', sans-serif;
-        
+        text-align: center;
+    @include breakpoint( tablet ){
+     }    
     }
     &__searchform {
         margin: 8rem 3rem 0 0;
+        @include breakpoint( tablet ){
+            margin: 3rem 3rem 0 0;
+
+        }
     
         &__keyword{
             width: 30rem;
