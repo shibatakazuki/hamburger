@@ -2,32 +2,51 @@
 
 .l-sidebar{
     position: fixed;
-    left:100%;
+    left:80vw;
     z-index: 10;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;
     background-color: #F2EDE9;
-    padding-left: 3rem;
+    padding-left: 3vw;
     font-family: M+1m;
     @include breakpoint( pc ){
     position: static;
-    width: 100%;
-    padding-bottom: 10000px;
-    margin-bottom: -10000px;
+    width: 40vw;
+    padding-bottom: 10000vw;
+    margin-bottom: -10000vw;
+    &.is-open {
+        left: 10vw;
+        overflow-y:scroll; /* 高さを指定しているので中身が超えた分はスクロールできるように */
+    }
+    &-button--close {
+        display: block;
+        margin: 0 0 0 auto; // 右寄せ
+        margin-right: 10vw;
+    
+        @include breakpoint( pc ) {
+            display: none;
+    }
     }
     &__title{
-        margin-top: 4rem;
+        margin-top: 3vw;
         font-size: 1.7rem;
+        @include breakpoint( pc ) {
+            display: block;
+            margin: 1vw 0;
+            padding-bottom: 3vw;
+            font-size: 2rem;
+        }
     }
     li{
-        padding-top: 2rem;
+        padding-top: 2vw;
         font-size: 1.5rem;
 
     }
     a{
-        padding-left: 2rem;
+        padding-left: 2vw;
         text-decoration: none;
         color: #707070;
     }
     
+}
 }

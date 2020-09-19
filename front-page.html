@@ -15,7 +15,8 @@
 <body>
   <div class="l-container">
     <div class="l-main">
-      <header class="l-header"> <a class="p-button" hrel="menu.html">menu</a>
+      <header class="l-header"> 
+        <a class="p-button" hrel="menu.html">menu</a>
         <h1 class="l-header__sitename">Hamburger</h1> 
         <form action="#" class="l-header__searchform">
           <input type="search" class="l-header__searchform__keyword">
@@ -68,8 +69,10 @@
     </div>
     <!-----l-main_closeー-->
     <!-----humbargerからmapまでの左サイドコンテナー-->
-    <div class="l-sidebar">
-      <h2 class="l-sidebar__title">menu</h2>
+    <div class="l-sidebar" id="sidebar">
+    <button class="l-sidebar-button-close" id="sidebar-button--close"></button>
+    <i class="fas fa-times fa-3x"></i>  
+    <h2 class="l-sidebar__title">menu</h2>
       <ul class="p-sidebarmenu">
         <li class="p-sidebarmenu__list">
           <h3>バーガー</h3>
@@ -106,7 +109,8 @@
       </ul>
     </div>
         <!-----↑右サイドのメニューバー-->
-
+<!-- スマホ画面 サイドバー出現時 モーダル部分（body部分を透過） -->
+<div class="l-sidebar-background" id="sidebar-background"></div>
   </div>
   <!-----l-container_closeー-->
     <footer class="l-footer">
@@ -117,3 +121,4 @@
       <p>Copyright: RaiseTech</p>
     </footer>
 </body>
+

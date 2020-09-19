@@ -1,7 +1,11 @@
 @charset "UTF-8";
 .p-topimage01{
     position: relative;
-    width: 112rem;
+    width: 87%;
+    @include breakpoint( pc ) {
+        width: 100vw;
+    }
+   
  img{
      width: 100%;
  }
@@ -11,7 +15,12 @@
      left: 11%;
      font-size: 4rem;
      color: #ffff;
-     font-weight: normal;
-
+     font-weight: normal;  
+     @include breakpoint( pc ) {
+        font-size: 3rem;
+    }
+     @include breakpoint( tablet ) {
+        font-size: 2rem;
+    }
  }
 }

@@ -8,6 +8,7 @@ body{
     font-family: 'Noto Sans JP', 'MyYuGothicM', 'YuGothic', '-apple-system', 'system-ui', 'Hiragino kaku Gothic ProN', 'Meiryo', 'Verdana', 'arial', 'helvetica', 'sans-serif', 'FontAwesome', 'M+ 1';
     font-size: 1.4rem;
     min-width: 375px;
+    max-width: 1330px;
     background-color: #FFFDFA;
 
 }
@@ -27,19 +28,19 @@ hr{
 // ↓メディアクエリ
 @mixin breakpoint($point) {
     @if $point == tablet {
-        @media (min-width: 641px) {
+        @media (max-width: 641px) {
             @content;
         }
     }
 
     @if $point == pc {
-        @media (min-width: 896px) {
+        @media (max-width: 1000px) {
             @content;
         }
     }
 
     @if $point == wide {
-        @media (min-width: 1024px) {
+        @media (max-width: 1330px) {
             @content;
         }
     }
