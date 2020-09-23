@@ -5,47 +5,81 @@
     width: 87vw;
     height: 15vw;
     justify-content: center;
+        
 
 
 
     @include breakpoint( pc ){
-        display: flex;
         flex-direction: column;
         width: auto;
-        justify-content: space-around;
+        align-items: center;
+        height: 20vw;
     }
         
+    @include breakpoint( tablet ){
+        height: 30vw;
+        align-items: center;
+        margin-left: -10vw;
+
+
+    }
+
     
     &__sitename {
         color: #707070;
-        margin-left: 3vw;
+        margin-left: 7vw;
         padding-top: 4vw;
         font-size: 5rem;
         font-family: 'Roboto', sans-serif;
+        @include breakpoint( pc ){
+            text-align: center;
+        }
+        @include breakpoint( tablet ){
+            align-items: center;
+            padding-left: 2vw;
+      
+           }
+
+       
 
     }
     &__searchform {
            margin: -3vw 10vw 0 50vw;
            display: flex;
            @include breakpoint( pc ) {
-               margin: 3vw 0;
-               
+               text-align: center;
+               padding-top: 4vw ;
+               margin-left: 33vw;               
         }
+        @include breakpoint( tablet ){
+            align-items: center;
+           }
+    
         &__keyword{
-            width: 30vw;
-            height: 2.3vw;
+            width: 40vw;
+            height: 3vw;
             background-color: #fff;
             border: 1px solid #707070;
             border-radius: 0.5rem;
             margin-right: 1vw;
+            @include breakpoint( tablet ){
+                width: 40vw;
+                height: 5vw;
+               }
+    
         }
         &__button{
-            width: 6vw;
-            height: 2.3vw;
+            width: 8vw;
+            height: 3vw;
             background-color: #F2EDE9;
             border: 1px solid #707070;
             border-radius: 0.5rem;
             color: #707070;
+            @include breakpoint( tablet ){
+                width: 15vw;
+                height: 5vw;
+               }
+    
 
         }
     }

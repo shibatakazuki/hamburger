@@ -1,9 +1,9 @@
 @charset "UTF-8";
 .p-topimage01{
     position: relative;
-    width: 87%;
+    width: 87vw;
     @include breakpoint( pc ) {
-        width: 100vw;
+        width: 100%;
     }
    
  img{

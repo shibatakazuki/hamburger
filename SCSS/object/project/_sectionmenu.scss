@@ -1,10 +1,12 @@
 @charset "UTF-8";
 .p-sectionmenu{
-    width: 86vw;
-    @include breakpoint( pc ) {
-        width: auto;
+    width: 87vw;
+    @include breakpoint( tablet ) {
+        width: 100%;
     }
-
+    @include breakpoint( PC ) {
+        width: 100%;
+    }
   
     ul{
         display: flex;
@@ -27,9 +29,17 @@
         height: 50vw;
         padding: 2vw 0;
         margin: 0 4vw 0 -2vw;
-        @include breakpoint( pc ) {
+        @include breakpoint( tablet ) {
             padding: auto;
             margin: auto 5vw;
+            width: 90vw;
+            height: 100vw;
+        }
+        @include breakpoint( pc ) {
+            margin: 2vw 5vw 2vw 0;
+            padding: 0 3vw;
+            margin: 2vw auto;
+            width: 100%;
         }
     
     }
@@ -42,32 +52,48 @@
         font-size: 5rem;
         color: #fff;
         @include breakpoint( tablet ) {
-            font-size: 3rem;}
+            font-size: 4rem;
+            left: 6vw;
+        }
     }
     &__contents01{
         position: absolute;
-        top: 36.5vw;
+        top: 34vw;
         left: 0vw;
         width:32vw;
-        height: 10vw;
+        height: 12vw;
         background-color: rgba(255,255,255,0.5);  
+        @include breakpoint( tablet ) {
+            height: 25vw;
+            width: 84vw;
+            font-size: 2rem;
+            left: 8vw;
+            top: 60vw;
+        }
    }
    &__contents02{
     position: absolute;
-    top: 25vw;
+    top: 21vw;
     left: 0vw;
     width:32vw;
-    height: 10vw;
+    height: 12vw;
     background-color: rgba(255,255,255,0.5);  
+    @include breakpoint( tablet ) {
+        height: 25vw;
+        width: 84vw;
+        font-size: 2rem;
+        left: 8vw;
+        top: 90vw;
+    }
 }
 dt{font-size: 1.8rem;
-   margin: 1rem 0 0 2rem;
+   margin: 1rem 0 0 1rem;
    padding-bottom: 1rem;
 }
 dd{
     font-size: 1.2rem;
-    margin: 0 0 0 2rem;
-    width: 35rem;
+    margin: 0 0 0 1rem;
+    width: 30rem;
 
 }
 }
