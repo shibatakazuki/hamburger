@@ -1,1 +1,12 @@
 @charset "UTF-8";
+.l-main{
+    width: 80%;
+    @include breakpoint( pc ){
+        width: 100%;
+    }
+        
+    @include breakpoint( tablet ){
+   width: 100%;
+    }
+ 
+}

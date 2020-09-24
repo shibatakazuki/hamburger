@@ -28,6 +28,7 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 @media (max-width: 1000px) {
@@ -60,7 +61,7 @@ hr {
 
 .l-header {
   background-color: #FFF7EF;
-  width: 87vw;
+  width: 100%;
   height: 15vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -138,22 +139,15 @@ hr {
 }
 
 .l-header__searchform__keyword {
-  width: 40vw;
-  height: 3vw;
+  width: 40rem;
+  height: 3rem;
   background-color: #fff;
   border: 1px solid #707070;
   border-radius: 0.5rem;
   margin-right: 1vw;
 }
 
-@media (max-width: 641px) {
-  .l-header__searchform__keyword {
-    width: 40vw;
-    height: 5vw;
-  }
-}
-
-.l-header__searchform__button {
+.l-header__button {
   width: 8vw;
   height: 3vw;
   background-color: #F2EDE9;
@@ -163,17 +157,33 @@ hr {
 }
 
 @media (max-width: 641px) {
-  .l-header__searchform__button {
+  .l-header__button {
     width: 15vw;
     height: 5vw;
   }
 }
 
+.l-main {
+  width: 80%;
+}
+
+@media (max-width: 1000px) {
+  .l-main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 641px) {
+  .l-main {
+    width: 100%;
+  }
+}
+
 .l-sidebar {
   position: fixed;
-  left: 80vw;
+  left: 80%;
   z-index: 10;
-  width: 100vw;
+  width: 20%;
   height: 100vw;
   background-color: #F2EDE9;
   padding-left: 3vw;
@@ -183,12 +193,13 @@ hr {
 @media (max-width: 1000px) {
   .l-sidebar {
     position: static;
+    display: none;
     width: 40vw;
     padding-bottom: 10000vw;
     margin-bottom: -10000vw;
   }
   .l-sidebar.is-open {
-    left: 20vw;
+    left: 13vw;
     overflow-y: scroll;
     /* 高さを指定しているので中身が超えた分はスクロールできるように */
   }
@@ -247,7 +258,7 @@ hr {
 
 .p-topimage01 {
   position: relative;
-  width: 87vw;
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -282,7 +293,7 @@ hr {
 }
 
 .p-sectionmenu {
-  width: 87vw;
+  width: 80%;
 }
 
 @media (max-width: 641px) {
@@ -319,7 +330,32 @@ hr {
   position: relative;
 }
 
-.p-sectionmenu__list img {
+.p-sectionmenu__list__takeout {
+  width: 60vw;
+  height: 30vw;
+  padding: 2vw 0;
+  margin: 0 4vw 0 -2vw;
+}
+
+@media (max-width: 641px) {
+  .p-sectionmenu__list__takeout {
+    padding: auto;
+    margin: auto 5vw;
+    width: 90vw;
+    height: 10vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .p-sectionmenu__list__takeout {
+    margin: 2vw 2vw 2vw 0;
+    padding: 0 2vw;
+    margin: 2vw auto;
+    width: 52vw;
+  }
+}
+
+.p-sectionmenu__list__eatin {
   width: 36vw;
   height: 50vw;
   padding: 2vw 0;
@@ -327,7 +363,7 @@ hr {
 }
 
 @media (max-width: 641px) {
-  .p-sectionmenu__list img {
+  .p-sectionmenu__list__eatin {
     padding: auto;
     margin: auto 5vw;
     width: 90vw;
@@ -336,11 +372,11 @@ hr {
 }
 
 @media (max-width: 1000px) {
-  .p-sectionmenu__list img {
-    margin: 2vw 5vw 2vw 0;
-    padding: 0 3vw;
+  .p-sectionmenu__list__eatin {
+    margin: 2vw 2vw 2vw 0;
+    padding: 0 2vw;
     margin: 2vw auto;
-    width: 100%;
+    width: 52vw;
   }
 }
 

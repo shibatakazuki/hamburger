@@ -2,7 +2,7 @@
 
 .l-header{
     background-color: #FFF7EF;
-    width: 87vw;
+    width: 100%;
     height: 15vw;
     justify-content: center;
         
@@ -54,17 +54,15 @@
         @include breakpoint( tablet ){
             align-items: center;
            }
+           
     
         &__keyword{
-            width: 40vw;
-            height: 3vw;
+            width: 40rem;
+            height: 3rem;
             background-color: #fff;
             border: 1px solid #707070;
             border-radius: 0.5rem;
             margin-right: 1vw;
-            @include breakpoint( tablet ){
-                width: 40vw;
-                height: 5vw;
                }
     
         }
@@ -83,6 +81,3 @@
 
         }
     }
-            
-    
-}

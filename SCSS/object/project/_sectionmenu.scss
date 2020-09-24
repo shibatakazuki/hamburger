@@ -1,12 +1,12 @@
 @charset "UTF-8";
 .p-sectionmenu{
-    width: 87vw;
+    width: 80%;
     @include breakpoint( tablet ) {
         width: 100%;
     }
     @include breakpoint( PC ) {
-        width: 100%;
-    }
+    width: 100%;
+    display: flex;    }
   
     ul{
         display: flex;
@@ -20,11 +20,29 @@
     display: flex;
     justify-content: center;
     position: relative;
+
+
+
+    &__takeout{
+        width: 60vw;
+        height: 30vw;
+        padding: 2vw 0;
+        margin: 0 4vw 0 -2vw;
+        @include breakpoint( tablet ) {
+            padding: auto;
+            margin: auto 5vw;
+            width: 90vw;
+            height: 10vw;
+        }
+        @include breakpoint( pc ) {
+            margin: 2vw 2vw 2vw 0;
+            padding: 0 2vw;
+            margin: 2vw auto;
+            width: 52vw;
+        }
     
-
-
-
-    img{
+    }
+    &__eatin{
         width: 36vw;
         height: 50vw;
         padding: 2vw 0;
@@ -36,10 +54,10 @@
             height: 100vw;
         }
         @include breakpoint( pc ) {
-            margin: 2vw 5vw 2vw 0;
-            padding: 0 3vw;
+            margin: 2vw 2vw 2vw 0;
+            padding: 0 2vw;
             margin: 2vw auto;
-            width: 100%;
+            width: 52vw;
         }
     
     }
