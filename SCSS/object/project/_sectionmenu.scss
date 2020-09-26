@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .p-sectionmenu{
-    width: 80%;
+    width: 100%;
     @include breakpoint( tablet ) {
         width: 100%;
     }
@@ -10,7 +10,6 @@
   
     ul{
         display: flex;
-        justify-content: center;
         @include breakpoint( tablet ) {
             flex-direction: column;
         }
@@ -24,10 +23,10 @@
 
 
     &__takeout{
-        width: 60vw;
-        height: 30vw;
-        padding: 2vw 0;
-        margin: 0 4vw 0 -2vw;
+        width: 38vw;
+        height: 50vw;
+        padding: 2vw 2vw;
+        margin-left: 2vw;
         @include breakpoint( tablet ) {
             padding: auto;
             margin: auto 5vw;
@@ -35,30 +34,43 @@
             height: 10vw;
         }
         @include breakpoint( pc ) {
-            margin: 2vw 2vw 2vw 0;
+            margin: 2vw;
             padding: 0 2vw;
-            margin: 2vw auto;
-            width: 52vw;
+            width: 48vw;
+            height: 50vw;
+            
         }
-    
+        img{
+            width: 100%;
+            height: 100%;
+
+        }
     }
     &__eatin{
-        width: 36vw;
+        width: 38vw;
         height: 50vw;
-        padding: 2vw 0;
-        margin: 0 4vw 0 -2vw;
+        padding: 2vw 2vw;
+        margin-right: 2vw;
+        @include breakpoint( pc ) {
+            width: 48vw;
+            height: 50vw;
+            
+        }
+
         @include breakpoint( tablet ) {
+
             padding: auto;
             margin: auto 5vw;
-            width: 90vw;
-            height: 100vw;
+            width: 25vw;
+            height: 40vw;
         }
-        @include breakpoint( pc ) {
-            margin: 2vw 2vw 2vw 0;
-            padding: 0 2vw;
-            margin: 2vw auto;
-            width: 52vw;
-        }
+        
+
+            img{
+                width: 100%;
+                height: 100%;
+    
+            }
     
     }
 
@@ -114,5 +126,4 @@ dd{
     width: 30rem;
 
 }
-}
-}
+}}

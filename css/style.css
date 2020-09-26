@@ -6,8 +6,6 @@ html {
 body {
   font-family: 'Noto Sans JP', 'MyYuGothicM', 'YuGothic', '-apple-system', 'system-ui', 'Hiragino kaku Gothic ProN', 'Meiryo', 'Verdana', 'arial', 'helvetica', 'sans-serif', 'FontAwesome', 'M+ 1';
   font-size: 1.4rem;
-  min-width: 375px;
-  max-width: 1330px;
   background-color: #FFFDFA;
 }
 
@@ -28,7 +26,6 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
 }
 
 @media (max-width: 1000px) {
@@ -62,10 +59,10 @@ hr {
 .l-header {
   background-color: #FFF7EF;
   width: 100%;
-  height: 15vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 20rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1000px) {
@@ -78,17 +75,17 @@ hr {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 20vw;
+    height: 20rem;
+    text-align: center;
   }
 }
 
 @media (max-width: 641px) {
   .l-header {
-    height: 30vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: -10vw;
+    text-align: center;
   }
 }
 
@@ -98,6 +95,7 @@ hr {
   padding-top: 4vw;
   font-size: 5rem;
   font-family: 'Roboto', sans-serif;
+  display: inline-block;
 }
 
 @media (max-width: 1000px) {
@@ -111,30 +109,22 @@ hr {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 2vw;
   }
 }
 
 .l-header__searchform {
-  margin: -3vw 10vw 0 50vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 0 0 0 25rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 30rem;
+  border: solid 1px #000;
 }
 
 @media (max-width: 1000px) {
   .l-header__searchform {
-    text-align: center;
-    padding-top: 4vw;
-    margin-left: 33vw;
-  }
-}
-
-@media (max-width: 641px) {
-  .l-header__searchform {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin: 0 15rem;
+    padding-top: 2vw;
   }
 }
 
@@ -147,17 +137,24 @@ hr {
   margin-right: 1vw;
 }
 
+@media (max-width: 1000px) {
+  .l-header__searchform__keyword {
+    text-align: center;
+  }
+}
+
 .l-header__button {
   width: 8vw;
   height: 3vw;
   background-color: #F2EDE9;
-  border: 1px solid #707070;
+  border: 20px solid #707070;
   border-radius: 0.5rem;
   color: #707070;
 }
 
-@media (max-width: 641px) {
+@media (max-width: 1000px) {
   .l-header__button {
+    text-align: center;
     width: 15vw;
     height: 5vw;
   }
@@ -293,7 +290,7 @@ hr {
 }
 
 .p-sectionmenu {
-  width: 80%;
+  width: 100%;
 }
 
 @media (max-width: 641px) {
@@ -306,9 +303,6 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media (max-width: 641px) {
@@ -331,10 +325,10 @@ hr {
 }
 
 .p-sectionmenu__list__takeout {
-  width: 60vw;
-  height: 30vw;
-  padding: 2vw 0;
-  margin: 0 4vw 0 -2vw;
+  width: 38vw;
+  height: 50vw;
+  padding: 2vw 2vw;
+  margin-left: 2vw;
 }
 
 @media (max-width: 641px) {
@@ -348,36 +342,44 @@ hr {
 
 @media (max-width: 1000px) {
   .p-sectionmenu__list__takeout {
-    margin: 2vw 2vw 2vw 0;
+    margin: 2vw;
     padding: 0 2vw;
-    margin: 2vw auto;
-    width: 52vw;
+    width: 48vw;
+    height: 50vw;
   }
 }
 
+.p-sectionmenu__list__takeout img {
+  width: 100%;
+  height: 100%;
+}
+
 .p-sectionmenu__list__eatin {
-  width: 36vw;
+  width: 38vw;
   height: 50vw;
-  padding: 2vw 0;
-  margin: 0 4vw 0 -2vw;
+  padding: 2vw 2vw;
+  margin-right: 2vw;
+}
+
+@media (max-width: 1000px) {
+  .p-sectionmenu__list__eatin {
+    width: 48vw;
+    height: 50vw;
+  }
 }
 
 @media (max-width: 641px) {
   .p-sectionmenu__list__eatin {
     padding: auto;
     margin: auto 5vw;
-    width: 90vw;
-    height: 100vw;
+    width: 25vw;
+    height: 40vw;
   }
 }
 
-@media (max-width: 1000px) {
-  .p-sectionmenu__list__eatin {
-    margin: 2vw 2vw 2vw 0;
-    padding: 0 2vw;
-    margin: 2vw auto;
-    width: 52vw;
-  }
+.p-sectionmenu__list__eatin img {
+  width: 100%;
+  height: 100%;
 }
 
 .p-sectionmenu__list h2 {
@@ -632,5 +634,18 @@ hr {
   color: #707070;
   font-size: 1rem;
   margin: 4rem 0 0 12rem;
+}
+
+.c-header__menu {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .c-header__menu {
+    float: right;
+    display: block;
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
